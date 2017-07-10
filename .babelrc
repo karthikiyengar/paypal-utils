@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "transform-flow-strip-types"
+  ],
+  "ignore": [
+    "**/*.test.js"
+  ]
+}
+

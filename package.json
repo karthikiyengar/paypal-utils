@@ -1,0 +1,48 @@
+{
+  "name": "paypal-utils",
+  "version": "1.0.2",
+  "description": "A utility that helps you calculate credit card payment and payout fees for PayPal",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest --watch",
+    "babel-prepublish": "babel src/ -d lib",
+    "flow-prepublish": "flow-copy-source src lib",
+    "prepublish": "npm run babel-prepublish && npm run flow-prepublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikiyengar/paypal-utils.git"
+  },
+  "keywords": [
+    "paypal",
+    "payout",
+    "payment",
+    "fees"
+  ],
+  "files": [
+    "lib"
+  ],
+  "author": "Karthik Iyengar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karthikiyengar/paypal-utils/issues"
+  },
+  "homepage": "https://github.com/karthikiyengar/paypal-utils#readme",
+  "dependencies": {
+    "credit-card-type": "^5.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "flow-bin": "^0.49.1",
+    "flow-copy-source": "^1.2.0",
+    "jest": "^20.0.4"
+  }
+}

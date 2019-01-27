@@ -1,4 +1,4 @@
-# paypal-utils
+# paypal-utils [DEPRECATED]
 
 A utility library that helps you when using the PayPal node.js API. This library also helps you calculate the payment (credit-card charge) and payout fees, which can be useful if you want to charge the fees to the sender. Currently, there is no method to derive the fees directly from the PayPal API. This library uses the PayPal official fee structure documented at https://www.paypal.com/us/webapps/mpp/merchant-fees for its calculations. This is particularly useful in marketplace type transactions.
 
